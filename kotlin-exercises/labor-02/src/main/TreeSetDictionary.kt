@@ -7,11 +7,8 @@ class TreeSetDictionary : IDictionary {
     private val dict = TreeSet<String>()
 
     companion object {
-        private val instance: TreeSetDictionary by lazy { TreeSetDictionary() }
+        public val instance: TreeSetDictionary by lazy { TreeSetDictionary() }
 
-        fun getInstance(): TreeSetDictionary {
-            return instance
-        }
     }
 
     constructor(){

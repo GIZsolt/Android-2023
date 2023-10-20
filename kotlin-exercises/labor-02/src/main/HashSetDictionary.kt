@@ -3,21 +3,18 @@ package main
 import java.io.File
 import java.util.HashSet
 
-class HashSetDictionary  : IDictionary {
+class HashSetDictionary() : IDictionary {
     private val dict = HashSet<String>()
 
-    constructor(){
+    init {
         val file = File("words.txt")
         if (file.exists()){
             file.forEachLine { line -> add(line.trim()) }
         }
     }
     companion object {
-        private val instance: HashSetDictionary by lazy { HashSetDictionary() }
+        public val instance: HashSetDictionary by lazy { HashSetDictionary() }
 
-        fun getInstance(): HashSetDictionary {
-            return instance
-        }
     }
 
     override fun add(word: String) {

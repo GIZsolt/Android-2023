@@ -5,11 +5,7 @@ class ListDictionary : IDictionary {
     private val dict = mutableListOf<String>()
 
     companion object {
-        private val instance: ListDictionary by lazy { ListDictionary() }
-
-        fun getInstance(): ListDictionary {
-            return instance
-        }
+        public val instance: ListDictionary by lazy { ListDictionary() }
     }
 
     constructor(){

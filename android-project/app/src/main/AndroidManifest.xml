@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipesApp"
         tools:targetApi="31">
+
+
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -23,12 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
